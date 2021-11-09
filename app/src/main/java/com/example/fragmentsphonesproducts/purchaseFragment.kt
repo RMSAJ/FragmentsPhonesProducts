@@ -19,9 +19,7 @@ class purchaseFragment : Fragment() {
     private lateinit var buyId: String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
 
-        }
     }
 
     override fun onCreateView(

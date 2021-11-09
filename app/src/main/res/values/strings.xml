@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Phones_products_Week4HW</string>
+    <string name="app_name">FragmentsPhonesProducts</string>
     <string name="productNumber">product #</string>
     <string name="productName">Product name: :</string>
     <string name="price">Price: </string>
@@ -9,6 +9,5 @@
     <string name="product_name_iphone_12">Product name: Iphone 12</string>
     <string name="todo">TODO</string>
     <string name="action_switch_layout">acction</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

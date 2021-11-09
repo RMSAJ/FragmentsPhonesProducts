@@ -21,18 +21,15 @@ class PhonesFragment : Fragment() {
 
     private var _binding: FragmentPhonesBinding? = null
     private val binding get() = _binding!!
-    private lateinit var recyclerView: RecyclerView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setHasOptionsMenu(false)
 
 
     }
 
-    private fun chooseLayout() {
 
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -40,14 +37,14 @@ class PhonesFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         _binding = FragmentPhonesBinding.inflate(inflater, container, false)
-        return binding.root
+        return binding?.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
 
       binding.recyclerView.adapter = PhonesProductsAdapter(this.requireContext() )
-        setHasOptionsMenu(true)
+        binding.recyclerView.setHasFixedSize(true)
     }
 
     override fun onDestroyView() {

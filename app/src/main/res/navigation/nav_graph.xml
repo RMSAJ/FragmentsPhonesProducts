@@ -20,9 +20,9 @@
         android:label="purchaseFragment" >
         <argument
             android:name="image"
-            app:argType="reference" />
+            app:argType="integer" />
         <argument
-            android:name="product_Name"
+            android:name="productName"
             app:argType="string"
             android:defaultValue="Iphone" />
         <argument
