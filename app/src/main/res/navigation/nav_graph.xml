@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/phonesFragment">
+
+    <fragment
+        android:id="@+id/phonesFragment"
+        android:name="com.example.fragmentsphonesproducts.PhonesFragment"
+        android:label="fragment_phones"
+        tools:layout="@layout/fragment_phones" >
+        <action
+            android:id="@+id/action_phonesFragment_to_purchaseFragment"
+            app:destination="@id/purchaseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/purchaseFragment"
+        android:name="com.example.fragmentsphonesproducts.purchaseFragment"
+        android:label="purchaseFragment" >
+        <argument
+            android:name="image"
+            app:argType="reference" />
+        <argument
+            android:name="product_Name"
+            app:argType="string"
+            android:defaultValue="Iphone" />
+        <argument
+            android:name="price"
+            app:argType="string" />
+    </fragment>
+</navigation>
